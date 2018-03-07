@@ -56,10 +56,11 @@ Hello, World!
 </code></pre>
 <p>Add a <code>precommit</code> script:</p>
 <pre><code class="lang-json">  &quot;scripts&quot;: {
-    &quot;emdaer&quot;: &quot;emdaer &amp;&amp; git add *.md&quot;,
-    &quot;precommit&quot;: &quot;npm run emdaer&quot;
+    &quot;emdaer&quot;: &quot;emdaer &amp;&amp; git add <em>.md&quot;,
+    &quot;precommit&quot;: &quot;npm run emdaer -- --yes&quot;
   }
-</code></pre>
+</em></code></pre>
+<p>NOTE: In the case of a <code>precommit</code> hook (or CI/other automation), we don’t want to be prompted about anything. The <code>--yes</code> flag will automatically answer “yes” to any prompts. For example, it will make emdaer write your READMEs without prompting about overwritting existing changes.</p>
 <p>Add a <code>.emdaer/README.emdaer.md</code> file:</p>
 
 <pre><code class="lang-md"># &lt;!--emdaer-p
@@ -70,6 +71,7 @@ Hello, World!
 <p>And give it a whirl:</p>
 <pre><code class="lang-sh">npm run emdaer
 </code></pre>
+<p>NOTE: By default, emdaer checks for existing changes to your READMEs before writing. If it detects changes, it will provide a prompt asking if you would like to overwrite the README with the newly generated content. If you accidentally edited README directly, you will want to answer <code>n</code> to the prompt, move any changes to the respective .emdaer/.emdaer.md file, and rerun emdaer. In the case where you may be writting your README incrementally and running emdaer multiple times, you can either answer <code>Y</code> to the prompt or use the <code>--yes</code> flag to skip the prompt all together. In both cases, emdaer will overwrite the README with the newly generated content.</p>
 <p></p><h2 id="core-plugins">Core Plugins</h2><p></p>
 <ul>
 <li><strong><a href="packages/plugin-contributors-details-github">@emdaer/plugin-contributors-details-github</a></strong> An emdaer plugin that gathers and renders contributor details from GitHub</li>
