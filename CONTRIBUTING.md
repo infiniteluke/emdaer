@@ -4,6 +4,10 @@
   Its template can be found at .emdaer/CONTRIBUTING.emdaer.md
 -->
 
+<!--
+  emdaerHash:6b190d3b8c9a384b4853ea3ebc7ec854
+-->
+
 <p></p><h1 id="contributing">Contributing</h1><p></p>
 <p></p><h2 id="code-of-conduct">Code of Conduct</h2><p></p>
 <p>Before contributing, please read our <a href="./CODE_OF_CONDUCT.md">code of conduct</a></p>

@@ -4,6 +4,10 @@
   Its template can be found at .emdaer/CODE_OF_CONDUCT.emdaer.md
 -->
 
+<!--
+  emdaerHash:dec4c15611a52d564b3c33f7b06e4fd3
+-->
+
 <p></p><h1 id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</h1><p></p>
 <p></p><h2 id="our-pledge">Our Pledge</h2><p></p>
 <p>In the interest of fostering an open and welcoming environment, we as
